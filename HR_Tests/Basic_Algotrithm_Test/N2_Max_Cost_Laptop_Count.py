@@ -60,5 +60,5 @@ print(maxCost([0,3,2,3,4],["legal","legal","illegal","legal","legal"],3))
 # So, only if "legal" counter is exactly the same as DailyCount, append the dailycost into the final list (total_cost).
 # If there are still laptops left, then reset the "legal" counter and "dailycost" counter, repeat the checking process.
 
-# The final list (line3) must have at least 0, in case none of the laptops meet the checking criteria.
+# The final list (line3) must have a default value 0, in case none of the laptops meet the checking criteria.
 # Return the maximum value of the final list.
