@@ -11,10 +11,10 @@ def maxCost(cost, labels, dailyCount):
             i+=1
         if legals == dailyCount:
             total_cost.append(daily_cost)
-    return total_cost
+    return max(total_cost)
 
 # print(maxCost([2,5,3,11,1],["legal","illegal","legal","illegal","legal"],2))
-print(maxCost([0,3,2,3,4],["legal","legal","illegal","legal","legal"],1))
+print(maxCost([0,3,2,3,4],["legal","legal","illegal","legal","legal"],3))
 
 # Problem Description:
 # A company manufactures a fixed number of laptops every day.
