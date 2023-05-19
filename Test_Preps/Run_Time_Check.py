@@ -2,8 +2,10 @@ import time
 import sys
 
 sys.path.append('A:\\Makers Institute\\Codes\\Week 2\\Hackerrank\\HR_Tests\\Test1')
+sys.path.append('A:\\Makers Institute\\Codes\\Week 2\\Hackerrank\\HR_Tests\\Test2')
 
 from N1_K_Subarrays import ksub1, ksub2, ksub3
+from N2 import gainMaxValue
 
 arr1 = [5, 10, 11, 9, 5]
 k1 = 2
@@ -23,6 +25,9 @@ start3 = time.time()
 print(ksub3(k1, arr1))
 end3 = time.time()
 
+start4 = time.time()
+gainMaxValue([2, 5, -8, -6, -7], 3)
+end4 = time.time()
 # print the difference between start
 # and end time in milli. secs
 # print("The time of execution of above program is :",
@@ -30,4 +35,5 @@ end3 = time.time()
 dur1=(end1-start1)*(10**3)
 dur2=(end2-start2)*(10**3)
 dur3=(end3-start3)*(10**3)
-print("durasi 1,2,3:", dur1, dur2, dur3)
+dur4=(end4-start4)*(10**3)
+print(dur4)
