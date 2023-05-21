@@ -1,4 +1,4 @@
-def changeAds(base10): # 8/8
+def changeAds(base10):  # 8/8
     base2 = bin(base10)
     num = base2[2:]
     str1 = ""
@@ -7,12 +7,14 @@ def changeAds(base10): # 8/8
             str1 += "1"
         else:
             str1 += "0"
-    return int("0b"+str1, base=2)
+    return int("0b" + str1, base=2)
+
 
 print(changeAds(30))
 print(changeAds(50))
 
-def change_ads(base10): # 8/8
+
+def change_ads(base10):  # 8/8
     base2 = bin(base10)[2:]
     str1 = ""
     for i in range(len(base2)):
@@ -20,7 +22,8 @@ def change_ads(base10): # 8/8
             str1 += "1"
         else:
             str1 += "0"
-    return int("0b"+str1, base=2)
+    return int("0b" + str1, base=2)
+
 
 print(change_ads(30))
 print(change_ads(50))
