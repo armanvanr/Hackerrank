@@ -14,6 +14,18 @@ def dayOfProgrammer(year):
     return date
 
 
+def dop(year):
+    date = "13.09." + str(year)
+    if 1700 <= year <= 1917 and year % 4 == 0:
+        date = "12.09." + str(year)
+    elif 1919 <= year <= 2700:
+        if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+            date = "12.09." + str(year)
+    else:
+        date = "26.09." + str(year)
+    return date
+
+
 print(dayOfProgrammer(1918))
 # notes:
 # in regular years, DOTP is on 13 September
